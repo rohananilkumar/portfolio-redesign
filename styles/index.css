@@ -97,7 +97,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2em 0em;
+  margin: 2em 2em;
 }
 
 .minimalist-section .section-tag {
@@ -120,7 +120,6 @@ a {
 }
 
 .minimalist-section .section-data {
-  margin: 0 1em;
   font-family: Myanmar Text;
   line-height: 1.3em;
   font-weight: 400;
@@ -198,6 +197,13 @@ a {
   -webkit-box-shadow: 0px 1px 3px black;
           box-shadow: 0px 1px 3px black;
   border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .skill-set .skill-panel .written {
@@ -377,5 +383,126 @@ footer .socials header {
 
 footer .socials ul li {
   font-family: Myanmar Text;
+}
+
+@media (min-width: 800px) {
+  .nav-header {
+    font-size: 30px !important;
+  }
+  .minimalist-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 80vh;
+  }
+  .minimalist-section .illustration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 50%;
+  }
+  .minimalist-section .written {
+    width: 50%;
+  }
+  .minimalist-section .written .section-tag {
+    font-size: 31 !important;
+    margin-bottom: -.3em;
+  }
+  .minimalist-section .written .section-header {
+    font-size: 41 !important;
+    margin-bottom: 1em;
+  }
+  .minimalist-section .written .section-data {
+    font-size: 20 !important;
+    line-height: 2em;
+  }
+  .skill-set {
+    padding: 4em;
+  }
+  .skill-set .panel-right {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: row-reverse !important;
+            flex-direction: row-reverse !important;
+  }
+  .skill-set .panel-right .illustration {
+    border-radius: 30px 0px 0px 30px !important;
+  }
+  .skill-set .panel-left .illustration {
+    border-radius: 0 30px 30px 0px !important;
+  }
+  .skill-set .skill-panel {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 70vh;
+  }
+  .skill-set .skill-panel .written {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 2.5em;
+  }
+  .skill-set .skill-panel .written .skill-tag {
+    margin-bottom: -.5em;
+  }
+  .skill-set .skill-panel .written header {
+    margin-bottom: .5em;
+  }
+  .skill-set .skill-panel .written .skill-description {
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+  .skill-set .skill-panel .illustration {
+    width: 50%;
+  }
+  .skill-set .skill-panel .illustration svg {
+    width: 80%;
+  }
+  #leadership {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0em 3em;
+    height: 90vh;
+  }
+  .background-container .pin-panel-container {
+    width: 25em;
+  }
+  .background-container .pin-panel-container .pin-panel {
+    margin-top: 3em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .background-container .pin-panel-container .pin-panel .pin-panel-text {
+    font-size: 1.5em;
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

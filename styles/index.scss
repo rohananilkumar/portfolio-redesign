@@ -80,7 +80,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2em 0em;
+    margin: 2em 2em;
 
     .section-tag{
         color:$tag-color;
@@ -102,7 +102,7 @@ a{
     }
 
     .section-data{
-        margin: 0 1em;
+        
         font-family: Myanmar Text;
         line-height: 1.3em;
         font-weight: 400;
@@ -177,7 +177,8 @@ a{
     .skill-panel{
         box-shadow: 0px 1px 3px black;
         border-radius: 30px;
-        
+        display: flex;
+        flex-direction: column;
         
 
         .written{
@@ -319,6 +320,120 @@ footer{
             }
         }
     }
+}
+
+@media (min-width:800px){
+    .nav-header{
+        font-size: 30px!important
+    }
+    .minimalist-section{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        .illustration{
+            display: flex;
+            justify-content: flex-end;
+            width:50%;
+        }
+        .written{
+            width:50%;
+            .section-tag{
+                font-size: 31 !important;
+                margin-bottom: -.3em;;
+            }
+            .section-header{
+                font-size: 41 !important;
+                margin-bottom: 1em;
+            }
+            .section-data{
+                font-size: 20 !important;
+                line-height: 2em;
+            }
+
+        }
+    }
+    .skill-set{
+        padding: 4em;
+        .panel-right{
+            flex-direction: row-reverse !important;
+            .illustration{
+                border-radius: 30px 0px 0px 30px !important;
+            }
+
+        }
+        .panel-left{
+            .illustration{
+                border-radius: 0 30px 30px 0px !important;
+            }
+            
+        }
+        .skill-panel{
+            flex-direction: row;
+            justify-content: space-between;
+            height: 70vh;
+            .written{
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 2.5em;;
+
+                .skill-tag{
+                    margin-bottom: -.5em;
+                }
+
+                header{
+                    margin-bottom: .5em;;
+                }
+                .skill-description{
+                    font-size: 1.1em;
+                    line-height: 1.5em;
+                }
+            }
+
+            .illustration{
+                
+                width:50%;
+
+                svg{
+                    width:80%
+                }
+            }
+
+            
+        }
+        
+    }
+
+    #leadership{
+        display: flex;
+        justify-content: space-between;
+        padding:0em 3em;
+        height: 90vh;
+    }
+
+    .background-container{
+        .pin-panel-container{
+            width:25em;
+
+            .pin-panel{
+                margin-top: 3em;
+                justify-content: space-between;
+
+                .pin-panel-text{
+                    font-size: 1.5em;
+                    margin:0;
+                   
+                }
+            }
+        }
+
+    }
+}
+
+@media(min-width:800){
+
 }
 
 
