@@ -670,5 +670,11 @@ footer .socials ul li {
     -webkit-transform: translate(5%, 0%);
     transform: translate(-7%, 16%);
   }
+  #projects {
+    height: 78vh;
+  }
+  #projects .project-panel {
+    height: 57vh;
+  }
 }
 /*# sourceMappingURL=index.css.map */
