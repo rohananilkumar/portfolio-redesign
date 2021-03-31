@@ -280,6 +280,7 @@ a {
 
 .resume .text {
   font-family: Myanmar Text;
+  margin-bottom: 1em;
 }
 
 .resume .resume-btn {
@@ -294,5 +295,87 @@ a {
 
 footer {
   background-color: #420084;
+  padding: 2em 1em;
+}
+
+footer .contact {
+  display: -ms-grid;
+  display: grid;
+  grid-template: 'name email' 'body body' 'send send';
+}
+
+footer #name {
+  grid-area: name;
+}
+
+footer #email {
+  grid-area: email;
+}
+
+footer #body {
+  grid-area: body;
+  height: 18vh;
+  border-radius: 20px;
+}
+
+footer .text-input {
+  border-radius: 50px;
+  margin: .5em .5em;
+  padding: auto;
+}
+
+footer .text-input::-webkit-input-placeholder {
+  text-align: center;
+  margin: auto;
+  vertical-align: center;
+  line-height: 27px;
+}
+
+footer .text-input:-ms-input-placeholder {
+  text-align: center;
+  margin: auto;
+  vertical-align: center;
+  line-height: 27px;
+}
+
+footer .text-input::-ms-input-placeholder {
+  text-align: center;
+  margin: auto;
+  vertical-align: center;
+  line-height: 27px;
+}
+
+footer .text-input::placeholder {
+  text-align: center;
+  margin: auto;
+  vertical-align: center;
+  line-height: 27px;
+}
+
+footer .send {
+  grid-area: send;
+  font-family: Myanmar Text;
+  background-color: #9343E4;
+  color: white;
+  padding: .3em 2em;
+  border-radius: 50px;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 0.5em;
+}
+
+footer .socials {
+  color: white;
+  margin: 3em 0;
+}
+
+footer .socials header {
+  font-family: Myanmar Text;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+footer .socials ul li {
+  font-family: Myanmar Text;
 }
 /*# sourceMappingURL=index.css.map */

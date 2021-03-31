@@ -243,6 +243,7 @@ a{
     margin: 5em 0;
     .text{
         font-family: Myanmar Text;
+        margin-bottom: 1em;
 
     }
     .resume-btn{
@@ -260,6 +261,64 @@ a{
 
 footer{
     background-color: $primary;
+    padding:2em 1em;
+    .contact{
+        display: grid;
+        grid-template: 'name email'
+        'body body'
+        'send send';
+    }
+    #name{
+        grid-area: name;
+    }
+    #email{
+        grid-area: email;
+
+    }
+    #body{
+        grid-area: body;
+        height:18vh;
+        border-radius: 20px;
+    }
+    .text-input{
+        border-radius: 50px;
+        margin:.5em .5em;
+        padding:auto;
+    }
+    .text-input::placeholder{
+        text-align: center;
+        margin:auto;
+        vertical-align: center;
+        line-height: 27px;
+    }
+    .send{
+        grid-area: send;
+        font-family: Myanmar Text;
+        background-color: $tag-color;
+        color:white;
+        padding:.3em 2em;
+        border-radius: 50px;
+        font-weight: bold;
+        margin:auto;
+        margin-top:0.5em;
+
+    }
+
+    .socials{
+        color:white;
+        margin: 3em 0;
+        header{
+            font-family: Myanmar Text;
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+        ul{
+            li{
+                font-family: Myanmar Text;
+            }
+        }
+    }
 }
 
 
