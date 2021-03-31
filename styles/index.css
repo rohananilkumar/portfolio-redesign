@@ -16,7 +16,7 @@ a {
 .nav-bar {
   background-color: #3B0077;
   color: white;
-  padding: 1em 50px;
+  padding: .5em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +30,7 @@ a {
 
 .nav-bar h1 {
   font-family: Myanmar Text;
-  font-size: 3em;
+  font-size: .9em;
   font-weight: bold;
   margin: 0;
   vertical-align: center;
@@ -47,12 +47,8 @@ a {
           justify-content: space-between;
 }
 
-.nav-bar span {
-  font-size: 3em;
-}
-
 .nav-links {
-  width: 30%;
+  width: 40%;
 }
 
 .hebrew {
@@ -76,22 +72,18 @@ a {
           box-shadow: 1px 0px 5px 0px black;
 }
 
-.hebrew .large-container .large-container-text {
-  margin-left: 80px;
-}
-
 .hebrew .large-container .large-container-text .main-header {
   color: white;
   font-family: Myanmar Text;
-  font-size: 9em;
-  line-height: 142px;
+  font-size: 4em;
+  line-height: 65px;
   width: 4em;
 }
 
 .hebrew .large-container .large-container-text .sub-header {
   color: white;
   font-family: Myanmar Text;
-  font-size: 5em;
+  font-size: 1.5em;
 }
 
 .featured-project {
@@ -105,7 +97,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10em 3em;
+  margin: 2em 0em;
 }
 
 .featured-project .section-tag {
@@ -113,27 +105,22 @@ a {
   font-family: Myanmar Text;
   font-weight: bold;
   font-size: 1.5em;
-  min-width: 50%;
-  text-align: center;
 }
 
 .featured-project header {
   font-family: Myanmar Text;
   font-weight: bold;
-  font-size: 3em;
-  min-width: 50%;
-  text-align: center;
   font-size: 2em;
 }
 
 .featured-project svg {
   width: 90%;
   height: auto;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 
 .featured-project .section-data {
-  margin: 2em 1em;
+  margin: 0 1em;
   font-family: Myanmar Text;
   line-height: 1.3em;
   font-weight: 400;
@@ -143,8 +130,6 @@ a {
   background-color: #420084;
   -webkit-box-shadow: 1px 0px 5px 0px black;
           box-shadow: 1px 0px 5px 0px black;
-  margin: 10em 0;
-  padding: 5em;
 }
 
 .background-container header {
@@ -152,13 +137,12 @@ a {
   font-family: Myanmar Text;
   font-size: 2em;
   font-weight: bold;
-  margin-left: 80px;
-  padding-top: 80px;
-  margin-bottom: 50px;
+  margin-left: .5em;
+  padding-top: .5em;
 }
 
 .background-container .projects-panel {
-  margin-bottom: -5em;
+  margin: 0 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,26 +160,13 @@ a {
 
 .background-container .pin-panel-container {
   padding: 3em 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: -5em;
 }
 
 .background-container .pin-panel-container .pin-panel {
+  margin-left: 1em;
   margin-top: 1em;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 30px;
   padding: .5em;
   width: 80%;
   display: -webkit-box;
@@ -205,22 +176,21 @@ a {
 
 .background-container .pin-panel-container .pin-panel .pin-panel-circle {
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   background-color: #420084;
 }
 
 .background-container .pin-panel-container .pin-panel .pin-panel-text {
   display: inline;
-  margin: auto;
+  margin-left: 2.5em;
   font-family: Myanmar Text;
   font-weight: bold;
-  font-size: 2em;
   padding: auto;
 }
 
 .skill-set {
-  margin: 6em 5em;
+  margin: 3em 1em;
 }
 
 .skill-set .skill-panel {
@@ -230,11 +200,10 @@ a {
 }
 
 .skill-set .skill-panel .written {
-  padding: 2em;
+  padding: 1em;
   display: -ms-grid;
   display: grid;
   grid-template: 'tag' 'header' 'description';
-  margin-bottom: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,7 +248,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 40em;
 }
 
 .skill-set .skill-panel .illustration svg {
@@ -292,7 +260,9 @@ a {
   background-color: #420084;
 }
 
-#projects .project-panel {
-  height: 40vh;
+@media (min-width: 480px) {
+  .nav-bar h1 {
+    font-size: 1.2em;
+  }
 }
 /*# sourceMappingURL=index.css.map */
