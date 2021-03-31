@@ -155,6 +155,43 @@ a{
         min-width: 18em;
         max-width: 21em;
         border-radius: 30px 30px 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        .project-icon{
+
+        }
+
+        .written{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 50%;
+            align-items: center;
+            .project-header{
+                    background-color: $tag-color;
+                    border-radius: 30px 30px 0 0;
+                    width:60%;
+                    padding: .8em;
+                    color:white;
+                    font-family: Myanmar Text;
+                    font-weight: bold;
+                    text-align: center;
+            }
+    
+            .project-description{
+                background-color: rgba(0, 128, 255,.24);
+                height: 30vh;
+                border-radius: 30px 30px 0 0;
+                .content{
+                    padding:2em;
+                }
+            }
+        }
+        
+
         
     }
 
