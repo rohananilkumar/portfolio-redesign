@@ -32,7 +32,6 @@ a {
   font-family: Myanmar Text;
   font-size: .9em;
   font-weight: bold;
-  margin: 0;
   vertical-align: center;
   text-align: center;
   line-height: 10px;
@@ -51,36 +50,51 @@ a {
   width: 40%;
 }
 
-.hebrew {
+.hero {
   height: 100%;
 }
 
-.hebrew .large-container {
+.hero .large-container {
   background-color: #420084;
   height: 80vh;
   padding: .5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-shadow: 1px 0px 5px 0px black;
           box-shadow: 1px 0px 5px 0px black;
 }
 
-.hebrew .large-container .large-container-text .main-header {
+.hero .large-container svg {
+  margin-right: -7vh;
+  width: 68vh;
+  margin-bottom: -29vh;
+}
+
+.hero .large-container .diamond {
+  display: none;
+}
+
+.hero .large-container .large-container-text .main-header {
   color: white;
   font-family: Myanmar Text;
   font-size: 4em;
   line-height: 65px;
+  font-weight: bold;
   width: 4em;
 }
 
-.hebrew .large-container .large-container-text .sub-header {
+.hero .large-container .large-container-text .sub-header {
   color: white;
   font-family: Myanmar Text;
   font-size: 1.5em;
@@ -125,6 +139,20 @@ a {
   font-weight: 400;
 }
 
+#projects {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .background-container {
   background-color: #420084;
   -webkit-box-shadow: 1px 0px 5px 0px black;
@@ -142,7 +170,6 @@ a {
 }
 
 .background-container .projects-panel {
-  margin: 0 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,14 +179,32 @@ a {
 }
 
 .background-container .project-panel {
+  grid-area: project;
   background-color: white;
-  width: 50%;
-  height: 15em;
+  width: 30%;
+  height: 65vh;
+  margin: 0 1em;
+  min-width: 18em;
+  max-width: 21em;
   border-radius: 30px 30px 0 0;
 }
 
 .background-container .pin-panel-container {
   padding: 3em 0;
+}
+
+.background-container .pin-panel-container .left {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.background-container .pin-panel-container .right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .background-container .pin-panel-container .pin-panel {
@@ -176,8 +221,8 @@ a {
 
 .background-container .pin-panel-container .pin-panel .pin-panel-circle {
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: #420084;
 }
 
@@ -190,7 +235,7 @@ a {
 }
 
 .skill-set {
-  margin: 3em 1em;
+  margin: 3em 0em;
 }
 
 .skill-set .skill-panel {
@@ -263,8 +308,21 @@ a {
   margin: 1em;
 }
 
-.leadership {
+#leadership {
   background-color: #420084;
+  position: relative;
+}
+
+#leadership .leadership-background {
+  position: absolute;
+}
+
+#leadership .leadership-background svg {
+  opacity: .3;
+  width: 75vw;
+  height: 91vh;
+  -webkit-transform: translate(5%, 0%);
+          transform: translate(5%, 0%);
 }
 
 .resume {
@@ -287,6 +345,7 @@ a {
 .resume .text {
   font-family: Myanmar Text;
   margin-bottom: 1em;
+  font-size: 2em;
 }
 
 .resume .resume-btn {
@@ -297,17 +356,29 @@ a {
   border-radius: 50px;
   font-weight: bold;
   margin: auto;
+  font-size: 1.4em;
 }
 
 footer {
   background-color: #420084;
   padding: 2em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer .contact {
   display: -ms-grid;
   display: grid;
   grid-template: 'name email' 'body body' 'send send';
+  margin: 5vw;
 }
 
 footer #name {
@@ -372,7 +443,7 @@ footer .send {
 
 footer .socials {
   color: white;
-  margin: 3em 0;
+  margin: 5vw;
 }
 
 footer .socials header {
@@ -386,8 +457,39 @@ footer .socials ul li {
 }
 
 @media (min-width: 800px) {
+  .diamond {
+    display: inline !important;
+  }
+  .large-container-text {
+    margin-left: 8vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /* align-items: center; */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact {
+    width: 60vh;
+  }
+  .main-header {
+    font-size: 6em !important;
+    line-height: 94px !important;
+  }
   .nav-header {
     font-size: 30px !important;
+    margin-left: 8vw;
+  }
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .minimalist-section {
     -webkit-box-orient: horizontal;
@@ -412,6 +514,7 @@ footer .socials ul li {
     width: 50%;
   }
   .minimalist-section .written {
+    margin-left: 5.5vw;
     width: 50%;
   }
   .minimalist-section .written .section-tag {
@@ -427,7 +530,7 @@ footer .socials ul li {
     line-height: 2em;
   }
   .skill-set {
-    padding: 4em;
+    padding: 3em;
   }
   .skill-set .panel-right {
     -webkit-box-orient: horizontal !important;
@@ -491,6 +594,9 @@ footer .socials ul li {
     padding: 0em 3em;
     height: 90vh;
   }
+  .background-container header {
+    margin-left: 8vw;
+  }
   .background-container .pin-panel-container {
     width: 25em;
   }
@@ -503,6 +609,18 @@ footer .socials ul li {
   .background-container .pin-panel-container .pin-panel .pin-panel-text {
     font-size: 1.5em;
     margin: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .skill-panel {
+    margin: 0 2em;
+  }
+  #leadership .leadership-background svg {
+    width: 102vw;
+    height: 100vh;
+    -webkit-transform: translate(5%, 0%);
+    transform: translate(-7%, 16%);
   }
 }
 /*# sourceMappingURL=index.css.map */

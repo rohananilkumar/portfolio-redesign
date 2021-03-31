@@ -30,7 +30,6 @@ a{
         font-family: Myanmar Text;
         font-size: .9em;
         font-weight: bold;
-        margin:0;
         vertical-align: center;
         text-align: center;
         line-height: 10px;
@@ -44,16 +43,26 @@ a{
 .nav-links{
     width: 40%;
 }
-.hebrew{
+.hero{
     height: 100%;
     .large-container{
         background-color: $primary;
         height: 80vh;
         padding:.5em;
         display: flex;
-        flex-direction: column;
-        justify-content:space-around;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
         box-shadow:  $panel-shadow;
+
+        svg{
+            margin-right: -7vh;
+            width: 68vh;
+            margin-bottom: -29vh;
+        }
+        .diamond{
+            display:none;
+        }
     
         .large-container-text{
             .main-header{
@@ -61,6 +70,7 @@ a{
                 font-family: Myanmar Text;
                 font-size: 4em;
                 line-height: 65px;
+                font-weight: bold;
                 width:4em;
             }
         
@@ -109,6 +119,13 @@ a{
     }
 }
 
+#projects{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .background-container{
     background-color: $primary;
     box-shadow:  $panel-shadow;
@@ -124,23 +141,33 @@ a{
     }
 
     .projects-panel{
-        margin: 0 1em;
         display: flex; 
         justify-content: center;
-        
           
     }
 
     .project-panel{
+        grid-area:project;
         background-color:white;
-        width:50%;
-        height:15em;
+        width:30%;
+        height:65vh;
+        margin: 0 1em;
+        min-width: 18em;
+        max-width: 21em;
         border-radius: 30px 30px 0 0;
         
     }
 
     .pin-panel-container{
         padding: 3em 0;
+
+        .left{
+            flex-direction: row;
+        }
+
+        .right{
+            flex-direction: row-reverse;
+        }
 
         .pin-panel{
             margin-left:1em;
@@ -150,11 +177,12 @@ a{
             padding:.5em;
             width: 80%;
             display: flex;
+            
             .pin-panel-circle{
                 
                 border-radius: 50%;
-                width:30px;
-                height: 30px;
+                width:40px;
+                height: 40px;
                 background-color: $primary;
             }
             .pin-panel-text{
@@ -171,7 +199,7 @@ a{
 }
 
 .skill-set{
-    margin: 3em 1em;
+    margin: 3em 0em;
 
 
     .skill-panel{
@@ -232,8 +260,20 @@ a{
     }
 }
 
-.leadership{
+#leadership{
     background-color: $primary;
+    position: relative;
+    .leadership-background{
+        position: absolute;
+        
+        svg{
+            
+            opacity: .3;
+            width: 75vw;
+            height: 91vh;
+            transform: translate(5%, 0%);
+        }
+    }
 }
 
 .resume{
@@ -245,7 +285,7 @@ a{
     .text{
         font-family: Myanmar Text;
         margin-bottom: 1em;
-
+        font-size: 2em;
     }
     .resume-btn{
 
@@ -256,18 +296,22 @@ a{
         border-radius: 50px;
         font-weight: bold;
         margin:auto;
-
+        font-size: 1.4em;
     }
 }
 
 footer{
     background-color: $primary;
     padding:2em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .contact{
         display: grid;
         grid-template: 'name email'
         'body body'
         'send send';
+        margin:5vw;
     }
     #name{
         grid-area: name;
@@ -307,7 +351,7 @@ footer{
 
     .socials{
         color:white;
-        margin: 3em 0;
+        margin: 5vw;
         header{
             font-family: Myanmar Text;
             font-weight: bold;
@@ -323,9 +367,36 @@ footer{
 }
 
 @media (min-width:800px){
-    .nav-header{
-        font-size: 30px!important
+    .diamond{
+        display:inline!important;
     }
+
+    .large-container-text{
+        margin-left: 8vw;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+    }
+
+    .contact{
+        width: 60vh;
+    }
+
+    .main-header{
+        font-size: 6em !important;
+        line-height: 94px !important;
+    }
+
+    .nav-header{
+        font-size: 30px!important;
+        margin-left:8vw;
+    }
+    
+    footer{
+        flex-direction: row-reverse;
+    }
+
     .minimalist-section{
         flex-direction: row-reverse;
         align-items: center;
@@ -337,6 +408,7 @@ footer{
             width:50%;
         }
         .written{
+            margin-left: 5.5vw;
             width:50%;
             .section-tag{
                 font-size: 31 !important;
@@ -354,7 +426,7 @@ footer{
         }
     }
     .skill-set{
-        padding: 4em;
+        padding: 3em;
         .panel-right{
             flex-direction: row-reverse !important;
             .illustration{
@@ -414,6 +486,10 @@ footer{
     }
 
     .background-container{
+
+        header{
+            margin-left: 8vw;
+        }
         .pin-panel-container{
             width:25em;
 
@@ -432,8 +508,21 @@ footer{
     }
 }
 
-@media(min-width:800){
+@media(max-width:800px){
+    .skill-panel{
+        margin: 0 2em;
+    }
 
+    #leadership{
+        .leadership-background{
+            svg{
+                width: 102vw;
+                height: 100vh;
+                -webkit-transform: translate(5%, 0%);
+                transform: translate(-7%, 16%);
+            }
+        }
+    }
 }
 
 
