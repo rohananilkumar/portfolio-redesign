@@ -75,7 +75,7 @@ a{
     }
 }
 
-.featured-project{
+.minimalist-section{
 
     display: flex;
     flex-direction: column;
@@ -112,6 +112,7 @@ a{
 .background-container{
     background-color: $primary;
     box-shadow:  $panel-shadow;
+    margin: 6em 0;
 
     header{
         color:white;
@@ -234,13 +235,31 @@ a{
     background-color: $primary;
 }
 
+.resume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5em 0;
+    .text{
+        font-family: Myanmar Text;
 
-@media(min-width:480px){
-    .nav-bar{
-        h1{
-            font-size: 1.2em;
-        }
-        
     }
-    
+    .resume-btn{
+
+        font-family: Myanmar Text;
+        background-color: $tag-color;
+        color:white;
+        padding:0 2em;
+        border-radius: 50px;
+        font-weight: bold;
+        margin:auto;
+
+    }
 }
+
+footer{
+    background-color: $primary;
+}
+
+

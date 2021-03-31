@@ -86,7 +86,7 @@ a {
   font-size: 1.5em;
 }
 
-.featured-project {
+.minimalist-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,26 +100,26 @@ a {
   margin: 2em 0em;
 }
 
-.featured-project .section-tag {
+.minimalist-section .section-tag {
   color: #9343E4;
   font-family: Myanmar Text;
   font-weight: bold;
   font-size: 1.5em;
 }
 
-.featured-project header {
+.minimalist-section header {
   font-family: Myanmar Text;
   font-weight: bold;
   font-size: 2em;
 }
 
-.featured-project svg {
+.minimalist-section svg {
   width: 90%;
   height: auto;
   margin-bottom: 3em;
 }
 
-.featured-project .section-data {
+.minimalist-section .section-data {
   margin: 0 1em;
   font-family: Myanmar Text;
   line-height: 1.3em;
@@ -130,6 +130,7 @@ a {
   background-color: #420084;
   -webkit-box-shadow: 1px 0px 5px 0px black;
           box-shadow: 1px 0px 5px 0px black;
+  margin: 6em 0;
 }
 
 .background-container header {
@@ -260,9 +261,38 @@ a {
   background-color: #420084;
 }
 
-@media (min-width: 480px) {
-  .nav-bar h1 {
-    font-size: 1.2em;
-  }
+.resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5em 0;
+}
+
+.resume .text {
+  font-family: Myanmar Text;
+}
+
+.resume .resume-btn {
+  font-family: Myanmar Text;
+  background-color: #9343E4;
+  color: white;
+  padding: 0 2em;
+  border-radius: 50px;
+  font-weight: bold;
+  margin: auto;
+}
+
+footer {
+  background-color: #420084;
 }
 /*# sourceMappingURL=index.css.map */
