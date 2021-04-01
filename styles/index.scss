@@ -42,6 +42,15 @@ a{
         display: flex;
         justify-content: space-between;
     }
+    span{
+        transition: color .3s, font-size .3s;
+    }
+    span:hover{
+        cursor: pointer;
+        color:$tag-color;
+        font-size: 2em;
+        
+    }
     
 }
 .nav-links{

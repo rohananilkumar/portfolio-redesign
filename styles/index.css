@@ -46,6 +46,17 @@ a {
           justify-content: space-between;
 }
 
+.nav-bar span {
+  -webkit-transition: color .3s, font-size .3s;
+  transition: color .3s, font-size .3s;
+}
+
+.nav-bar span:hover {
+  cursor: pointer;
+  color: #9343E4;
+  font-size: 2em;
+}
+
 .nav-links {
   width: 40%;
 }
