@@ -58,6 +58,7 @@ a{
 }
 .hero{
     height: 100%;
+    overflow: hidden;
     .large-container{
         background-color: $primary;
         height: 80vh;
