@@ -1,6 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -375,6 +383,7 @@ a {
 
 #leadership .leadership-background {
   position: absolute;
+  display: none;
 }
 
 #leadership .leadership-background svg {
@@ -519,6 +528,9 @@ footer .socials ul li {
 @media (min-width: 800px) {
   .diamond {
     display: inline !important;
+  }
+  .leadership-background {
+    display: inline, !important;
   }
   .large-container-text {
     margin-left: 8vw;

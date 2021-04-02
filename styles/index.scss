@@ -5,13 +5,16 @@ $panel-shadow:1px 0px 5px 0px black;
 $section-header-size:2em;
 $illustration-background:rgba(110, 0, 220, .16);
 html{
-    
+    scroll-behavior: smooth;
 }
 
 body{
     margin: 0;
     padding:0;
     
+}
+a{
+    text-decoration: none;
 }
 ul{
     margin: 0;
@@ -316,6 +319,7 @@ a{
     position: relative;
     .leadership-background{
         position: absolute;
+        display: none;
         
         svg{
             
@@ -420,6 +424,9 @@ footer{
 @media (min-width:800px){
     .diamond{
         display:inline!important;
+    }
+    .leadership-background{
+        display: inline, !important;
     }
 
     .large-container-text{
