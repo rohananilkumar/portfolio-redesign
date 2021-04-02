@@ -217,10 +217,15 @@ a{
 
         .left{
             flex-direction: row;
+            padding-right: 20px;
+            padding:.5em;
         }
 
         .right{
             flex-direction: row-reverse;
+            padding-left: 20px;
+            padding:.5em;
+
         }
 
         .pin-panel{
@@ -228,9 +233,12 @@ a{
             margin-top:1em;
             background-color: white;
             border-radius: 30px;
-            padding:.5em;
+            
             width: 80%;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
             
             .pin-panel-circle{
                 
@@ -241,7 +249,7 @@ a{
             }
             .pin-panel-text{
                 display: inline;
-                margin-left: 2.5em;
+                
                 font-family: Myanmar Text;
                 font-weight: bold;
                 padding:auto;
@@ -425,9 +433,6 @@ footer{
     .diamond{
         display:inline!important;
     }
-    .leadership-background{
-        display: inline, !important;
-    }
 
     .large-container-text{
         margin-left: 8vw;
@@ -519,6 +524,7 @@ footer{
                 .skill-description{
                     font-size: 1.1em;
                     line-height: 1.5em;
+                    width: 29vw;
                 }
             }
 
@@ -541,6 +547,10 @@ footer{
         justify-content: space-between;
         padding:0em 3em;
         height: 90vh;
+        .leadership-background{
+            display: inline !important;
+        }
+        
     }
 
     .background-container{
@@ -573,6 +583,7 @@ footer{
 
     #leadership{
         .leadership-background{
+            
             svg{
                 width: 102vw;
                 height: 100vh;

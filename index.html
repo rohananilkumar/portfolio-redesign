@@ -5,6 +5,9 @@
     </title>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src='scripts/index.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -118,31 +121,37 @@
         
     </section>
 
-    <section class="background-container" id='projects'>
+    <section class="background-container splide" id='projects'>
         <header class="section-header">
             Projects
         </header>
-        <div class="projects-panel">
-            <div class="project-panel">
-                <div class="project-icon">
-
-                </div>
-                <div class="written">
-                    <div class="project-header">
-                        Project 1
+        <div class="projects-panel splide__track">
+            <div class="splide__list">
+                <div class="project-panel splide__slide">
+                    <div class="project-icon">
+    
                     </div>
-                    <div class="project-description">
-                        <div class="content">
-                            Lorem Ipsum is simply dummy text of the 
-                            printing and typesetting 
-                            industry.
+                    <div class="written">
+                        <div class="project-header">
+                            Project 1
                         </div>
-                         
-     
+                        <div class="project-description">
+                            <div class="content">
+                                Lorem Ipsum is simply dummy text of the 
+                                printing and typesetting 
+                                industry.
+                            </div>
+                             
+         
+                        </div>
                     </div>
+                    
                 </div>
+
+
                 
             </div>
+            
         </div>
 
     </section>
@@ -226,7 +235,7 @@
                 Leader Of
             </header>
     
-            <div class="pin-panel">
+            <div class="pin-panel left">
                 <div class="pin-panel-circle">
     
                 </div>
@@ -235,7 +244,7 @@
                 </div>
             </div>
     
-            <div class="pin-panel">
+            <div class="pin-panel left">
                 <div class="pin-panel-circle">
     
                 </div>
@@ -244,7 +253,7 @@
                 </div>
             </div>
     
-            <div class="pin-panel">
+            <div class="pin-panel left">
                 <div class="pin-panel-circle">
     
                 </div>

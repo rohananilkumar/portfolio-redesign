@@ -266,6 +266,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding-right: 20px;
+  padding: .5em;
 }
 
 .background-container .pin-panel-container .right {
@@ -273,6 +275,8 @@ a {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  padding-left: 20px;
+  padding: .5em;
 }
 
 .background-container .pin-panel-container .pin-panel {
@@ -280,11 +284,16 @@ a {
   margin-top: 1em;
   background-color: white;
   border-radius: 30px;
-  padding: .5em;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .background-container .pin-panel-container .pin-panel .pin-panel-circle {
@@ -296,7 +305,6 @@ a {
 
 .background-container .pin-panel-container .pin-panel .pin-panel-text {
   display: inline;
-  margin-left: 2.5em;
   font-family: Myanmar Text;
   font-weight: bold;
   padding: auto;
@@ -529,9 +537,6 @@ footer .socials ul li {
   .diamond {
     display: inline !important;
   }
-  .leadership-background {
-    display: inline, !important;
-  }
   .large-container-text {
     margin-left: 8vw;
     display: -webkit-box;
@@ -649,6 +654,7 @@ footer .socials ul li {
   .skill-set .skill-panel .written .skill-description {
     font-size: 1.1em;
     line-height: 1.5em;
+    width: 29vw;
   }
   .skill-set .skill-panel .illustration {
     width: 50%;
@@ -665,6 +671,9 @@ footer .socials ul li {
             justify-content: space-between;
     padding: 0em 3em;
     height: 90vh;
+  }
+  #leadership .leadership-background {
+    display: inline !important;
   }
   .background-container header {
     margin-left: 8vw;

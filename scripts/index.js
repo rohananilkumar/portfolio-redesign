@@ -70,11 +70,44 @@ let skillPanelReveal= ()=>{
 
 }
 
+let splide_initializer = ()=>{
+    new Splide( '.splide' ).mount();
+}
+
 
 window.onload = ()=>{
     heroReveal();
     minimalistSectionReveal();
     skillPanelReveal();
+    splide_initializer();
     ScrollReveal().reveal('.diamond', slideRight);
+    for(let i =0; i<40; i++){
+        document.querySelector('.projects-panel')
+        .insertAdjacentHTML('beforeEnd',getProject('Project 1','Lorem Ipsum is simply dummy text of the \
+        printing and typesetting \
+        industry.'));
+    }
+    
+    
     console.log(document.querySelector('.main-header'))
+}
+function getProject(header, content){
+    return `<div class="project-panel splide__slide">
+    <div class="project-icon">
+
+    </div>
+    <div class="written">
+        <div class="project-header">
+            ${header}
+        </div>
+        <div class="project-description">
+            <div class="content">
+                ${content}
+            </div>
+             
+
+        </div>
+    </div>
+    
+    </div>`
 }
