@@ -63,6 +63,7 @@ a {
 
 .hero {
   height: 100%;
+  overflow: hidden;
 }
 
 .hero .large-container {
