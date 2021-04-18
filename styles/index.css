@@ -580,6 +580,7 @@ footer .socials ul li {
         -ms-flex-pack: center;
             justify-content: center;
     height: 80vh;
+    overflow: hidden;
   }
   .minimalist-section .illustration {
     display: -webkit-box;
@@ -709,5 +710,9 @@ footer .socials ul li {
   #projects .project-panel {
     height: 57vh;
   }
+}
+
+.swiper-container {
+  width: 100%;
 }
 /*# sourceMappingURL=index.css.map */

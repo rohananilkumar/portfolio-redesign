@@ -465,6 +465,7 @@ footer{
         align-items: center;
         justify-content: center;
         height: 80vh;
+        overflow: hidden;
         .illustration{
             display: flex;
             justify-content: flex-end;
@@ -602,4 +603,7 @@ footer{
     }
 }
 
+.swiper-container {
+    width: 100%;
+  }
 

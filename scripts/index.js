@@ -44,8 +44,11 @@ let minimalistSectionReveal = () =>{
     let slideUpDescription = Object.assign({}, slideUp);
     slideUpDescription.delay = 200;
 
+    let slideLeftIllustration = Object.assign({}, slideLeft);
+    slideLeftIllustration.distance='50%';
 
-    ScrollReveal().reveal('.minimalist-section .illustration',slideRight);
+
+    ScrollReveal().reveal('.minimalist-section .illustration',slideLeftIllustration);
     ScrollReveal().reveal('.section-tag',slideUpTag);
     ScrollReveal().reveal('.section-header',slideUpHeader);
     ScrollReveal().reveal('.section-data',slideUpDescription)
@@ -70,29 +73,35 @@ let skillPanelReveal= ()=>{
 
 }
 
-let splide_initializer = ()=>{
-    new Splide( '.splide' ).mount();
-}
+
 
 
 window.onload = ()=>{
     heroReveal();
     minimalistSectionReveal();
     skillPanelReveal();
-    splide_initializer();
     ScrollReveal().reveal('.diamond', slideRight);
-    for(let i =0; i<40; i++){
+    for(let i =0; i<5; i++){
         document.querySelector('.projects-panel')
-        .insertAdjacentHTML('beforeEnd',getProject('Project 1','Lorem Ipsum is simply dummy text of the \
+        .insertAdjacentHTML('beforeEnd',getProject('Project '+i,'Lorem Ipsum is simply dummy text of the \
         printing and typesetting \
         industry.'));
     }
     
+
+    $('.projects-panel').slick({slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: false,
+        autoplay: true,
+        arrows:false,
+        infinite:true,
+        loop:true,
+        autoplaySpeed: 2000,});
     
     console.log(document.querySelector('.main-header'))
 }
 function getProject(header, content){
-    return `<div class="project-panel splide__slide">
+    return `<div class="project-panel">
     <div class="project-icon">
 
     </div>
